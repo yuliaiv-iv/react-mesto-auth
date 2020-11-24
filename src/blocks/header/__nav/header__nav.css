@@ -1,0 +1,9 @@
+.header__nav {
+  text-decoration: none;
+  color: #fff;
+  align-self: flex-end;
+  padding-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-left: 24px;
+}
