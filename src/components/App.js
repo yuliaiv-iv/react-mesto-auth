@@ -47,18 +47,26 @@ function App() {
 
   function handleCardLike(card) {
     const isLiked = card.likes.some(like => like._id === currentUser._id);
-    api.changeLikeStatus(card._id, !isLiked).then((newCard) => {
-      const newCards = cards.map((c) => c._id === card._id ? newCard : c);
-      setCards(newCards);
-    });
+    api.changeLikeStatus(card._id, !isLiked)
+      .then((newCard) => {
+        const newCards = cards.map((c) => c._id === card._id ? newCard : c);
+        setCards(newCards);
+      })
+      .catch(err => {
+        console.log(err);
+      })
   }
 
   function handleCardDelete(card) {
-    api.deleteCard(card._id).then(() => {
-      const newCards = cards.filter((c) => c._id !== card._id);
-      setCards(newCards);
-      closeAllPopups()
-    })
+    api.deleteCard(card._id)
+      .then(() => {
+        const newCards = cards.filter((c) => c._id !== card._id);
+        setCards(newCards);
+        closeAllPopups()
+      })
+      .catch(err => {
+        console.log(err);
+      })
   }
 
   function handleDeleteClick(card) {
@@ -189,8 +197,7 @@ function App() {
           setEmail(data.data.email)
           setLoggedIn(true)
           history.push('/')
-        }
-        )
+        })
         .catch((err) => {
           if (err === 401) {
             return console.log('Токен не передан или передан не в том формате');

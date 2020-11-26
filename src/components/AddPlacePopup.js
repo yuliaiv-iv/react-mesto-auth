@@ -7,7 +7,7 @@ function AddPlacePopup({ onClick, onAddPlace, isOpen, onClose}) {
     const [inputValue, setInputValue] = React.useState({ name: '', link: '', });
     const [isValid, setIsValid] = React.useState({ name: false, link: false });
     const [validationMessage, setValidationMessage] = React.useState({ name: '', link: '' });
-    let isFormValid = Object.values(isValid).every(Boolean);
+    const isFormValid = Object.values(isValid).every(Boolean);
 
     function handleInputChange(event) {
         const { name, value } = event.target;

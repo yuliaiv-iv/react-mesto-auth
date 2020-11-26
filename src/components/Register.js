@@ -20,6 +20,7 @@ function Register({ onRegister }) {
     });
   }
 
+
   function handleSubmit(e) {
     e.preventDefault();
     const { email, password } = inputValue;
@@ -61,3 +62,4 @@ function Register({ onRegister }) {
 }
 
 export default Register;
+

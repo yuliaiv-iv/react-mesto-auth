@@ -5,3 +5,11 @@
   margin: auto;
   margin-top: 50px;
 }
+
+@media screen and (max-width: 475px) {
+  .auth__form {
+    margin-left: 11px;
+    margin-right: 11px;
+    max-width: 100%;
+  }
+}
