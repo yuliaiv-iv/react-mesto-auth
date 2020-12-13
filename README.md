@@ -1,30 +1,31 @@
-# Getting Started with Create React App
+# Mesto
+Учебный проект **Mesto на React с авторизацией и регистрацией** по профессии Веб-разработчик. Опубликованный проект подключен к **`серверу`** и можно посмотреть **[здесь](https://yuliaiv-iv.github.io/react-mesto-auth)**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Описание
 
-## Available Scripts
+Интерактивный сервис с элементами соц сети написанный на **`React`** с использованием **`функциональных компонентов`** и **`hooks`**. Можно опубликовывать и удалять созданные карточки. Реализация постановки и снятие лайка, просмотр фотографий в увеличенном формате. **`Валидация форм`** осуществляется изменением **`useState`**. Возможность обновлять инфо и аватар юзера. Реализована **`регистрация и авторизации`** пользователя, работа с **`Local storage и token`**, переадресация, защита маршрутов
 
-In the project directory, you can run:
+### Технологии
 
-### `npm start`
+При разработке веб-сайта использованы следующие технологии:
+* nested файловая структура **`CSS по методологии БЭМ`**
+* **`адаптивная верстка`** с использованием **`медиа-запросов`**
+* **`flex`** и **`grid-layout`** 
+* валидация форм 
+* взаимодействие с **`API`**
+* React
+* **`Route, Switch, Redirect, useHistory`**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Запуск и установка
+* `npm install` устанавка модулей, перечисленных как зависимости в package.json
+* `npm start` запустить проект для просмотра в браузере
 
-### `npm test`
+### Figma 
+**[Ссылка](https://www.figma.com/file/fUESH7icdnexdbpwgYsUcc/Sprint-14-(RU)?node-id=0%3A1)** на макет в Figma
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
+<div align="center">
+    <img src="./src/images/readme_main.jpg" alt="Место" width="400"/>
+    <img src="./src/images/readme_form.jpg" alt="Место" width="400"/>
+</div>
 
