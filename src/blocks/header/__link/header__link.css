@@ -10,10 +10,19 @@
 
 @media screen and (max-width: 760px) {
   .header__link {
+    visibility: hidden;
+  }
+}
+
+.header__link_visible {
+  visibility: visible;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 475px) {
+  .header__link_visible {
+    padding-bottom: 30px;
     font-size: 14px;
-    padding-bottom: 0;
-    margin-left: 0;
-    align-self: center;
-    margin-top: 18px;
   }
 }

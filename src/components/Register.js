@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Form from './Form';
 import AuthInput from './AuthInput';
 import SubmitButton from './SubmitButton.js';
-import Header from './Header';
 
 function Register({ onRegister }) {
 
@@ -28,9 +27,6 @@ function Register({ onRegister }) {
   }
   return (
     <>
-      <Header
-        link="Войти" path='/sign-in'
-      />
       <Form
         title="Регистрация"
         onSubmit={handleSubmit}

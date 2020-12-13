@@ -5,8 +5,11 @@
 @import url(./__button/header__button.css);
 @import url(./__button/_close/header__button_close.css);
 @import url(./__button/_open/header__button_open.css);
-@import url(./_visible/header__nav_visible.css);
+@import url(./__menu/header__menu.css);
+@import url(./_visible/header__menu_visible.css);
 @import url(./_visible/header__logo_visible.css);
+@import url(./__email/_menu/header__email_menu.css);
+@import url(./__link/_menu/header__link_menu.css);
 
 .header {
     position: relative;

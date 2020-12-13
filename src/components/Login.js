@@ -2,8 +2,6 @@ import React from 'react';
 import Form from './Form';
 import AuthInput from './AuthInput';
 import SubmitButton from './SubmitButton.js';
-import Header from './Header';
-
 
 function Login({ onLoggin }) {
   const [inputValue, setInputValue] = React.useState({ 
@@ -29,9 +27,6 @@ function Login({ onLoggin }) {
   }
   return (
     <>
-      <Header
-        link="Регистрация" path='/sign-up'
-      />
       <Form
         title="Вход"
         onSubmit={handleSubmit}

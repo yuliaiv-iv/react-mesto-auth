@@ -220,9 +220,13 @@ function App() {
     <div className="page">
       <CurrentUserContext.Provider value={currentUser}>
         <div className="container">
+          <Header
+            email={email}
+            onClick={onSignOut}
+            loggedIn={loggedIn}
+          />
           <Switch>
             <ProtectedRoute exact path='/' loggedIn={loggedIn}>
-              <Header email={email} link="Выйти" onClick={onSignOut} />
               <Main
                 cards={cards}
                 onEditProfile={handleEditProfileClick}

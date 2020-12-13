@@ -10,8 +10,6 @@
 
 @media screen and (max-width: 760px) {
   .header__email {
-    padding-bottom: 0;
-    align-self: center;
-    margin-left: 0;
+    visibility: hidden;
   }
 }
