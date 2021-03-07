@@ -29,7 +29,7 @@
 **[Ссылка](https://www.figma.com/file/fUESH7icdnexdbpwgYsUcc/Sprint-14-(RU)?node-id=0%3A1)** на макет в Figma
 
 <div align="center">
-    <img src="./src/images/readme_login.png" alt="Место" width="400"/>
+    <img src="./src/images/readme_login.png" alt="Место" width="400" height="280"/>
     <img src="./src/images/readme_main.jpg" alt="Место" width="400"/>
 </div>
 
